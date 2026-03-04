@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KUYA B's GOTO - DRINKS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+     <img src="logoo.png" alt="KUYA B's GOTO Logo" class="logo" style="float: left; width: 80px; height: 120px;">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold; font-size: 350%;">KUYA B's GOTO</h1>
+    <nav>
+        <a href="index.html">Main Course</a>
+        <a href="drinks.html">Drinks</a>
+        <a href="desert.html">Dessert</a>
+    </nav>
+</header>
+
+<section class="menu">
+    <h2 style = " font-weight: bold; font-family: 'Times New Roman', Times, serif;">DRINKS</h2>
+
+    <div class="item">
+        <span>GULAMAN (₱60)</span>
+        <input type="number" id="gulamanQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>BUKO JUICE(₱50)</span>
+        <input type="number" id="bukoQty" min="0" value="0">
+    </div>
+
+    <div class="item">
+        <span>ICED TEA(₱50)</span>
+        <input type="number" id="ITQty" min="0" value="0">
+    </div>
+
+   <div class="item">
+    <span>INPUT YOUR AGE: (FOR DISCOUNT)</span>
+    <input type="number" id="ageInput" min="0" value="0">
+</div>
+
+<button onclick="computeMainCourse()">Place Order</button>
+
+<h3 style = "font-family: 'Times New Roman', Times, serif;">Total: ₱<span id="totalMain">0</span></h3>
+<h3 style = "font-family: 'Times New Roman', Times, serif;">Discounted Amount: ₱<span id="totalDiscount">0</span></h3>
+<h3 style = "font-family: 'Times New Roman', Times, serif;">Payable Amount: ₱<span id="payableAmount">0</span></h3>
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
